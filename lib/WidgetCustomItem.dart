@@ -33,11 +33,13 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
             Icon(
               icon,
               color: Colors.white,
+              size: 40,
             ),
-            Text(
+            Container(padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+            child: Text(
               name,
-              style: TextStyle(color: Colors.white),
-            ),
+              style: TextStyle(color: Colors.white, fontSize: 20),
+            ),)
           ],
         ),
       ),
