@@ -6,55 +6,51 @@ class RadioDemo extends StatefulWidget {
 }
 
 class _RadioDemo extends State<RadioDemo> {
-
-  bool _switchSelected = true;
-  bool _checkboxSelected0 = false;
-  bool _checkboxSelected1 = true;
   onChange(value) {
-    this.setState((){
+    this.setState(() {
       groupValue = value;
     });
   }
+
   int groupValue = 0;
-  
+
   @override
   Widget build(BuildContext context) {
     final Column column = Column(
       children: <Widget>[
-        Radio(value: 1, groupValue: groupValue, activeColor: Colors.orange, onChanged: (T) {
-          onChange(T);
-        }),
-        Radio(value: 2, groupValue: groupValue, onChanged: (T) {
-          onChange(T);
-        }),
-        Radio(value: 3, groupValue: groupValue, activeColor: Colors.red, onChanged: (T) {
-          onChange(T);
-        }),
-        Switch(
-            value: _switchSelected,
-            onChanged: (value) {
-              setState(() {
-                print("Switch: $_switchSelected");
-                _switchSelected = value;
-              });
-            }),
-        Checkbox(
-            value: _checkboxSelected0,
+        Radio(
+            value: 1,
+            groupValue: groupValue,
             activeColor: Colors.orange,
-            onChanged: (value) {
-              setState(() {
-                print("Checkbox: $value");
-                _checkboxSelected0 = value;
-              });
+            onChanged: (T) {
+              onChange(T);
             }),
-        Checkbox(value: _checkboxSelected1, activeColor: Colors.orange, onChanged: (value) {
-          setState(() {
-            _checkboxSelected1 = value;
-          });
-        })
+        Radio(
+            value: 2,
+            groupValue: groupValue,
+            onChanged: (T) {
+              onChange(T);
+            }),
+        Radio(
+            value: 3,
+            groupValue: groupValue,
+            activeColor: Colors.red,
+            onChanged: (T) {
+              onChange(T);
+            }),
       ],
     );
 
-    return Center(child: column,);
+    return Scaffold(
+      appBar: AppBar(
+        title: Text("Radio Demo"),
+      ),
+      body: Container(
+        color: Colors.white,
+        child: Column(
+          children: <Widget>[Center(child: column)],
+        ),
+      ),
+    );
   }
 }

@@ -10,8 +10,8 @@ class Routes {
   static String checkboxDemo = "/checkbox";
   static String swtichDemo = "/switch";
 
-  static void configureRoutes(Router router) {
-    List widgetDemoList = WidgetDemoList();
-
-  }
+//  static void configureRoutes(Router router) {
+//    List widgetDemoList = WidgetDemoList();
+//
+//  }
 }
