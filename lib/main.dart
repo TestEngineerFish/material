@@ -1,9 +1,20 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
+import 'package:material/routers/application.dart';
 import 'package:material/widgetHome.dart';
+import 'routers/router.dart';
 
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
+
+  MyApp() {
+    // 配置路由
+    final router = Router();
+    BPRouter.configureRoutes(router);
+    Application.router = router;
+  }
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

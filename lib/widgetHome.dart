@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material/WidgetCustomItem.dart';
+import 'package:material/resources/bpString.dart';
 
 class WidgetHome extends StatefulWidget {
   @override
@@ -17,14 +18,16 @@ class _WidgetHome extends State<WidgetHome> {
         crossAxisCount: 2,
         mainAxisSpacing: 10.0,
         crossAxisSpacing: 4,
-        padding: const EdgeInsets.all(4.0),
+        padding: const EdgeInsets.all(5.0),
         childAspectRatio: 1.3,
         children: <Widget>[
-          WidgetCustomItem("Text", Icons.text_format),
-          WidgetCustomItem("TextField", Icons.text_fields),
-          WidgetCustomItem("Radio", Icons.radio),
-          WidgetCustomItem("Checkbox", Icons.check_box),
-          WidgetCustomItem("Switch", Icons.switch_video),
+          WidgetCustomItem(textDemoName, Icons.text_format),
+          WidgetCustomItem(textFieldDemoName, Icons.text_fields),
+          WidgetCustomItem(radioDemoName, Icons.radio),
+          WidgetCustomItem(checkboxDemoName, Icons.check_box),
+          WidgetCustomItem(switchDemoName, Icons.switch_video),
+          WidgetCustomItem(buttonBarDemoName, Icons.radio_button_unchecked),
+          WidgetCustomItem(dropdownButtonDemoName, Icons.arrow_drop_down),
         ],
       ),
     );

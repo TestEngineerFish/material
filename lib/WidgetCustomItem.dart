@@ -1,9 +1,14 @@
+import 'package:fluro/fluro.dart';
 import 'package:flutter/material.dart';
-import 'package:material/Demo/checkboxDemo.dart';
-import 'package:material/Demo/radioDemo.dart';
-import 'package:material/Demo/switchDemo.dart';
-import 'package:material/Demo/textDemo.dart';
-import 'package:material/Demo/textFieldDemo.dart';
+
+import 'package:material/widgets/checkboxDemo.dart';
+import 'package:material/widgets/radioDemo.dart';
+import 'package:material/widgets/switchDemo.dart';
+import 'package:material/widgets/textDemo.dart';
+import 'package:material/widgets/textFieldDemo.dart';
+import 'package:material/resources/bpString.dart';
+import 'package:material/routers/application.dart';
+import 'routers/router.dart';
 
 class WidgetCustomItem extends StatefulWidget {
   var name = "";
@@ -22,44 +27,42 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
   _WidgetCustomItem(this.name, this.icon);
 
   _onPressed() {
-    print(name);
-//    Navigator.of(context).push(MaterialPageRoute(builder: (context){
-//      return TextDemo();
-//    }));
     switch (name) {
-      case "Text":
+      case textDemoName:
         {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return TextDemo();
-          }));
+          Application.router.navigateTo(context, BPRouter.textDemo,
+              transition: TransitionType.inFromBottom);
         }
         break;
-      case "TextField":
+      case textFieldDemoName:
         {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return TextFieldDemo();
-          }));
+          Application.router.navigateTo(context, BPRouter.textFieldDemo,
+              transition: TransitionType.fadeIn);
         }
         break;
-      case "Checkbox":
+      case checkboxDemoName:
         {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return CheckboxDemo();
-          }));
+          Application.router.navigateTo(context, BPRouter.checkboxDemo);
         }
         break;
-      case "Switch":
+      case switchDemoName:
         {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return SwitchDemo();
-          }));
+          Application.router.navigateTo(context, BPRouter.swtichDemo);
         }
         break;
-      case "Radio":
+      case radioDemoName:
         {
-          Navigator.push(context, MaterialPageRoute(builder: (context) {
-            return RadioDemo();
-          }));
+          Application.router.navigateTo(context, BPRouter.radioDemo);
+        }
+        break;
+      case buttonBarDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.buttonBarDemo);
+        }
+        break;
+      case dropdownButtonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.dropdownButtonDemo);
         }
     }
   }
