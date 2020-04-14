@@ -64,6 +64,27 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
         {
           Application.router.navigateTo(context, BPRouter.dropdownButtonDemo);
         }
+        break;
+      case flatButtonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.flatButtonDemo);
+        }
+        break;
+      case floatingActionButtonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.floatingActionButtonDemo);
+        }
+        break;
+      case iconButtonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.iconButtonDemo);
+        }
+        break;
+      case outlineButtonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.outlineButtonDemo);
+        }
+        break;
     }
   }
 
@@ -83,9 +104,10 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
                   size: 40,
                 ),
                 Container(
-                  padding: const EdgeInsets.fromLTRB(0, 10, 0, 0),
+                  padding: const EdgeInsets.fromLTRB(10, 10, 10, 0),
                   child: Text(
                     name,
+                    textAlign: TextAlign.center,
                     style: TextStyle(color: Colors.white, fontSize: 20),
                   ),
                 )

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:material/resources/macro.dart';
 
 class SwitchDemo extends StatefulWidget {
   @override
@@ -12,24 +13,26 @@ class _SwitchDemo extends State<SwitchDemo> {
   Widget build(BuildContext context) {
     // TODO: implement build
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Switch Demo"),
-      ),
-      body: Container(
-        color: Colors.white,
-        child: Column(
-          children: <Widget>[
-            Switch(
-                value: _switchSelected,
-                onChanged: (value) {
-                  setState(() {
-                    print("Switch: $_switchSelected");
-                    _switchSelected = value;
-                  });
-                }),
-          ],
+        appBar: AppBar(
+          title: Text("Switch Demo"),
         ),
-      ),
-    );
+        backgroundColor: randomColor(),
+        body: Container(
+          margin: const EdgeInsets.only(top: 100),
+          child: Center(
+            child: Column(
+              children: <Widget>[
+                Switch(
+                    value: _switchSelected,
+                    onChanged: (value) {
+                      setState(() {
+                        print("Switch: $_switchSelected");
+                        _switchSelected = value;
+                      });
+                    }),
+              ],
+            ),
+          ),
+        ));
   }
 }

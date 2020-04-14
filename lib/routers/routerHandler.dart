@@ -3,6 +3,10 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material/widgets/buttons/buttonBarDemo.dart';
 import 'package:material/widgets/buttons/dropdownButtonDemo.dart';
+import 'package:material/widgets/buttons/flatButtonDemo.dart';
+import 'package:material/widgets/buttons/floatingActionButtonDemo.dart';
+import 'package:material/widgets/buttons/iconButtonDemo.dart';
+import 'package:material/widgets/buttons/outlineButtonDemo.dart';
 
 import 'package:material/widgets/checkboxDemo.dart';
 import 'package:material/widgets/radioDemo.dart';
@@ -41,4 +45,20 @@ var buttonBarHandler = Handler(handlerFunc: (BuildContext context, Map<String, L
 
 var dropdownButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return DropdownButtonDemo();
+});
+
+var flatButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return FlatButtonDemo();
+});
+
+var floatingActionButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return FloatingActionButtonDemo();
+});
+
+var iconButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return IconButtonDemo();
+});
+
+var outlineButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return OutlineButtonDemo();
 });
