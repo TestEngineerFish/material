@@ -2,6 +2,7 @@ import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:material/widgets/buttons/buttonBarDemo.dart';
+import 'package:material/widgets/buttons/buttonDemo.dart';
 import 'package:material/widgets/buttons/dropdownButtonDemo.dart';
 import 'package:material/widgets/buttons/flatButtonDemo.dart';
 import 'package:material/widgets/buttons/floatingActionButtonDemo.dart';
@@ -40,6 +41,10 @@ var switchHandler = Handler(handlerFunc: (BuildContext context, Map<String, List
   return SwitchDemo();
 });
 
+var buttonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return ButtonDemo();
+});
+
 var buttonBarHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return ButtonBarDemo();
 });
@@ -64,7 +69,7 @@ var outlineButtonHandler = Handler(handlerFunc: (BuildContext context, Map<Strin
   return OutlineButtonDemo();
 });
 
-var popupMenuButtonHandler = Handler(handlerFunc: (BuildContext context, Map<>) {
+var popupMenuButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return PopupMenuButtonDemo();
 });
 

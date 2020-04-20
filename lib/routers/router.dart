@@ -11,6 +11,7 @@ class BPRouter {
   static String radioDemo = "/radio";
   static String checkboxDemo = "/checkbox";
   static String swtichDemo = "/switch";
+  static String buttonDemo = "/button";
   static String buttonBarDemo = "/buttonBar";
   static String dropdownButtonDemo = "/dropdownButton";
   static String flatButtonDemo = "/flatButton";
@@ -25,6 +26,7 @@ class BPRouter {
     router.define(radioDemo, handler: radioHandler);
     router.define(checkboxDemo, handler: checkboxHandler);
     router.define(swtichDemo, handler: switchHandler);
+    router.define(buttonDemo, handler: buttonHandler);
     router.define(buttonBarDemo, handler: buttonBarHandler);
     router.define(dropdownButtonDemo, handler: dropdownButtonHandler);
     router.define(flatButtonDemo, handler: flatButtonHandler);

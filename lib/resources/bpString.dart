@@ -4,6 +4,7 @@ const String textFieldDemoName            = "TextFieldDemo";
 const String radioDemoName                = "RadioDemo";
 const String checkboxDemoName             = "CheckboxDemo";
 const String switchDemoName               = "SwitchDemo";
+const String buttonDemoName               = "ButtonDemo";
 const String buttonBarDemoName            = "buttonBarDemo";
 const String dropdownButtonDemoName       = "dropdownButtonDemo";
 const String flatButtonDemoName           = "flatButtonDemo";

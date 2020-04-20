@@ -26,12 +26,7 @@ class _WidgetHome extends State<WidgetHome> {
           WidgetCustomItem(radioDemoName, Icons.radio),
           WidgetCustomItem(checkboxDemoName, Icons.check_box),
           WidgetCustomItem(switchDemoName, Icons.switch_video),
-          WidgetCustomItem(buttonBarDemoName, Icons.radio_button_checked),
-          WidgetCustomItem(dropdownButtonDemoName, Icons.arrow_drop_down),
-          WidgetCustomItem(flatButtonDemoName, Icons.radio_button_checked),
-          WidgetCustomItem(floatingActionButtonDemoName, Icons.radio_button_checked),
-          WidgetCustomItem(iconButtonDemoName, Icons.radio_button_checked),
-          WidgetCustomItem(outlineButtonDemoName, Icons.radio_button_checked),
+          WidgetCustomItem(buttonDemoName, Icons.radio_button_checked),
         ],
       ),
     );

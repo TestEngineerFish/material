@@ -55,6 +55,11 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
           Application.router.navigateTo(context, BPRouter.radioDemo);
         }
         break;
+      case buttonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.buttonDemo, transition: TransitionType.inFromRight);
+        }
+        break;
       case buttonBarDemoName:
         {
           Application.router.navigateTo(context, BPRouter.buttonBarDemo);
