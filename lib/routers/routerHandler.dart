@@ -7,6 +7,7 @@ import 'package:material/widgets/buttons/flatButtonDemo.dart';
 import 'package:material/widgets/buttons/floatingActionButtonDemo.dart';
 import 'package:material/widgets/buttons/iconButtonDemo.dart';
 import 'package:material/widgets/buttons/outlineButtonDemo.dart';
+import 'package:material/widgets/buttons/popupMenuButtonDemo.dart';
 
 import 'package:material/widgets/checkboxDemo.dart';
 import 'package:material/widgets/radioDemo.dart';
@@ -63,4 +64,7 @@ var outlineButtonHandler = Handler(handlerFunc: (BuildContext context, Map<Strin
   return OutlineButtonDemo();
 });
 
-var popupMenuButtonHandler = Handler(handlerFunc: (BuildContext context, Map<>));
+var popupMenuButtonHandler = Handler(handlerFunc: (BuildContext context, Map<>) {
+  return PopupMenuButtonDemo();
+});
+
