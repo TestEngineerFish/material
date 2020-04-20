@@ -62,3 +62,5 @@ var iconButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, 
 var outlineButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return OutlineButtonDemo();
 });
+
+var popupMenuButtonHandler = Handler(handlerFunc: (BuildContext context, Map<>));

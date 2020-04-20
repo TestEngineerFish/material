@@ -38,12 +38,11 @@ class _OutlineButtonDemo extends State<OutlineButtonDemo> {
                   onPressed: _onPress,
                   highlightColor: buttonColor),
               OutlineButton(
-                child: Text("边框样式"),
+                child: Text("边框样式2"),
                 borderSide: BorderSide(color: randomColor()),
                 textColor: Colors.white,
                 onPressed: _onPress,
                 textTheme: ButtonTextTheme.primary,
-                clipBehavior: ShapeBorde
               ),
             ],
           ),

@@ -11,3 +11,4 @@ const String flatButtonDemoName           = "flatButtonDemo";
 const String floatingActionButtonDemoName = "floatingActionButtonDemo";
 const String iconButtonDemoName           = "iconButtonDame";
 const String outlineButtonDemoName        = "outlineButtonDemo";
+const String popupMenuButtonDemoName      = "popupMenuButtonDemo";
