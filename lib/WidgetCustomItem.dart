@@ -40,6 +40,11 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
               transition: TransitionType.fadeIn);
         }
         break;
+      case radioDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.radioDemo);
+        }
+        break;
       case checkboxDemoName:
         {
           Application.router.navigateTo(context, BPRouter.checkboxDemo);
@@ -50,16 +55,12 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
           Application.router.navigateTo(context, BPRouter.swtichDemo);
         }
         break;
-      case radioDemoName:
-        {
-          Application.router.navigateTo(context, BPRouter.radioDemo);
-        }
-        break;
       case buttonDemoName:
         {
           Application.router.navigateTo(context, BPRouter.buttonDemo, transition: TransitionType.inFromRight);
         }
         break;
+    //      Button
       case buttonBarDemoName:
         {
           Application.router.navigateTo(context, BPRouter.buttonBarDemo);
@@ -88,6 +89,26 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
       case outlineButtonDemoName:
         {
           Application.router.navigateTo(context, BPRouter.outlineButtonDemo);
+        }
+        break;
+      case popupMenuButtonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.popupMenuButtonDemo);
+        }
+        break;
+      case raisedButtonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.raisedButtonDemo);
+        }
+        break;
+      case rawMaterialButtonDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.rawMaterialButtonDemo);
+        }
+        break;
+      case listViewDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.listViewDemo);
         }
         break;
     }

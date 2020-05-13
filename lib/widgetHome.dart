@@ -27,6 +27,7 @@ class _WidgetHome extends State<WidgetHome> {
           WidgetCustomItem(checkboxDemoName, Icons.check_box),
           WidgetCustomItem(switchDemoName, Icons.switch_video),
           WidgetCustomItem(buttonDemoName, Icons.radio_button_checked),
+          WidgetCustomItem(listViewDemoName, Icons.list),
         ],
       ),
     );

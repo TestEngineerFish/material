@@ -9,8 +9,11 @@ import 'package:material/widgets/buttons/floatingActionButtonDemo.dart';
 import 'package:material/widgets/buttons/iconButtonDemo.dart';
 import 'package:material/widgets/buttons/outlineButtonDemo.dart';
 import 'package:material/widgets/buttons/popupMenuButtonDemo.dart';
+import 'package:material/widgets/buttons/raisedButtonDemo.dart';
+import 'package:material/widgets/buttons/rawMaterialButtonDemo.dart';
 
 import 'package:material/widgets/checkboxDemo.dart';
+import 'package:material/widgets/listViewDemo.dart';
 import 'package:material/widgets/radioDemo.dart';
 import 'package:material/widgets/switchDemo.dart';
 import 'package:material/widgets/textDemo.dart';
@@ -71,5 +74,17 @@ var outlineButtonHandler = Handler(handlerFunc: (BuildContext context, Map<Strin
 
 var popupMenuButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
   return PopupMenuButtonDemo();
+});
+
+var raisedButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return RaisedButtonDemo();
+});
+
+var rawMaterialButtonHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return RawMaterialButtonDemo();
+});
+
+var listViewHandler = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return ListViewDemo();
 });
 

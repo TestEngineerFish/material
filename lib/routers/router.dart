@@ -18,6 +18,10 @@ class BPRouter {
   static String floatingActionButtonDemo = "/floatingActionButton";
   static String iconButtonDemo = "/iconButton";
   static String outlineButtonDemo = "/outlineButon";
+  static String popupMenuButtonDemo = "/popupMenuBUtton";
+  static String raisedButtonDemo = "/raisedButtonDemo";
+  static String rawMaterialButtonDemo = "/rawMaterialBUttonDemo";
+  static String listViewDemo = "/listView";
 
   static void configureRoutes(Router router) {
     router.define(home, handler: homeHandler);
@@ -33,6 +37,10 @@ class BPRouter {
     router.define(floatingActionButtonDemo, handler: floatingActionButtonHandler);
     router.define(iconButtonDemo, handler: iconButtonHandler);
     router.define(outlineButtonDemo, handler: outlineButtonHandler);
+    router.define(popupMenuButtonDemo, handler: popupMenuButtonHandler);
+    router.define(raisedButtonDemo, handler: raisedButtonHandler);
+    router.define(rawMaterialButtonDemo, handler: rawMaterialButtonHandler);
+    router.define(listViewDemo, handler: listViewHandler);
     //    List widgetDemoList = WidgetDemoList().getDemos();
   }
 }
