@@ -13,7 +13,7 @@ class _WidgetHome extends State<WidgetHome> {
     // TODO: implement build
     return Container(
       height: 800,
-      color: Colors.yellow,
+      color: Theme.of(context).primaryColor,
       child: GridView.count(
         crossAxisCount: 2,
         mainAxisSpacing: 10.0,

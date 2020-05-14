@@ -15,7 +15,6 @@ class ButtonBarDemo extends StatelessWidget {
         backgroundColor: Colors.yellow[100],
         body: Container(
           margin: const EdgeInsets.all(10),
-          color: Colors.white,
           child: ListView(
               scrollDirection: Axis.vertical,
               children: <Widget>[
@@ -26,7 +25,7 @@ class ButtonBarDemo extends StatelessWidget {
                   children: <Widget>[
                     RaisedButton(
                       child: Text("0"),
-                      color: Colors.red,
+//                      color: Colors.red,
                       onPressed: _onPressButton,
                     ),
                     RaisedButton(

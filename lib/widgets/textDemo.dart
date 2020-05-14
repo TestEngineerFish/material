@@ -18,7 +18,6 @@ class _TextDemo extends State<TextDemo> {
           title: Text("Text Demo"),
         ),
         body: Container(
-          color: Colors.white,
           child: ListView(
             shrinkWrap: true,
             padding: const EdgeInsets.all(15),

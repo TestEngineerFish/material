@@ -46,6 +46,7 @@ class _IconButtonDemo extends State<IconButtonDemo> {
                   alignment: AlignmentDirectional.bottomEnd,
                   disabledColor: Colors.black, // 如果没有实现 onPress。默认disabel状态
                   highlightColor: Colors.yellow,
+                  onPressed: _onPressed,
                 ),
                 width: 150,
                 height: 100,

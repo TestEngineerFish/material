@@ -11,7 +11,7 @@ class ButtonDemo extends StatelessWidget {
         title: Text("Button Demo"),
       ),
       body: Container(
-        height: 800,
+        height: 600,
         color: Colors.greenAccent,
         child: GridView.count(
           crossAxisCount: 2,

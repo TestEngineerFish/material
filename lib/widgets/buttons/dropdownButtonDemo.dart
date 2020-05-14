@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:material/resources/bpString.dart';
+import 'package:material/resources/macro.dart';
 
 class DropdownButtonDemo extends StatefulWidget {
   @override
@@ -67,6 +68,7 @@ class _DropdownButtonDemo extends State<DropdownButtonDemo> {
         body: Container(
           margin: const EdgeInsets.fromLTRB(0, 300, 0, 0),
           height: 60,
+          color: randomColor(),
           child: DropdownButton(
             hint: Text("下拉选择颜色"),
             value: selectedValue,

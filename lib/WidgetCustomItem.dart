@@ -119,7 +119,7 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
     return GestureDetector(
         onTap: _onPressed,
         child: Container(
-          padding: const EdgeInsets.fromLTRB(0, 50, 0, 0),
+          padding: const EdgeInsets.fromLTRB(0, 20, 0, 0),
           color: Colors.lightBlue[800],
           child: Center(
             child: Column(

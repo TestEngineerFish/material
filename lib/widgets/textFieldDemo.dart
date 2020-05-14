@@ -22,7 +22,7 @@ class _TextFieldDemo extends State<TextFieldDemo> {
           child: Column(
             children: <Widget>[
               Container(
-                padding: const EdgeInsets.all(40),
+                padding: const EdgeInsets.all(20),
                 child: TextField(),
               ),
               Container(

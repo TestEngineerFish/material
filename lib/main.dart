@@ -1,8 +1,11 @@
 import 'package:fluro/fluro.dart';
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
+import 'package:material/resources/macro.dart';
 import 'package:material/routers/application.dart';
 import 'package:material/widgetHome.dart';
 import 'routers/router.dart';
+
 
 void main() => runApp(MyApp());
 
@@ -19,9 +22,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
+      theme: debugDefaultTargetPlatformOverride == TargetPlatform.iOS ? kIOSTheme : kAndroidTheme,
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
