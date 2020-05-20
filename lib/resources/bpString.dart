@@ -15,3 +15,5 @@ const String popupMenuButtonDemoName      = "popupMenuButtonDemo";
 const String raisedButtonDemoName         = "raisedButtonDemo";
 const String rawMaterialButtonDemoName    = "rawMaterialButtonDemo";
 const String listViewDemoName             = "listViewDemo";
+const String mapDemoName                  = "mapDemo";
+const String listennerDemoName            = "listennerDemoName";

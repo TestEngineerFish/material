@@ -111,6 +111,16 @@ class _WidgetCustomItem extends State<WidgetCustomItem> {
           Application.router.navigateTo(context, BPRouter.listViewDemo);
         }
         break;
+      case mapDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.mapDemo);
+        }
+        break;
+      case listennerDemoName:
+        {
+          Application.router.navigateTo(context, BPRouter.listennerDemo);
+        }
+        break;
     }
   }
 

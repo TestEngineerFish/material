@@ -28,6 +28,8 @@ class _WidgetHome extends State<WidgetHome> {
           WidgetCustomItem(switchDemoName, Icons.switch_video),
           WidgetCustomItem(buttonDemoName, Icons.radio_button_checked),
           WidgetCustomItem(listViewDemoName, Icons.list),
+          WidgetCustomItem(mapDemoName, Icons.map),
+          WidgetCustomItem(listennerDemoName, Icons.gesture),
         ],
       ),
     );

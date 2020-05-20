@@ -1,6 +1,7 @@
 import 'package:fluro/fluro.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:material/widgets/ListennerDemo.dart';
 import 'package:material/widgets/buttons/buttonBarDemo.dart';
 import 'package:material/widgets/buttons/buttonDemo.dart';
 import 'package:material/widgets/buttons/dropdownButtonDemo.dart';
@@ -14,6 +15,7 @@ import 'package:material/widgets/buttons/rawMaterialButtonDemo.dart';
 
 import 'package:material/widgets/checkboxDemo.dart';
 import 'package:material/widgets/listViewDemo.dart';
+import 'package:material/widgets/mapDemo.dart';
 import 'package:material/widgets/radioDemo.dart';
 import 'package:material/widgets/switchDemo.dart';
 import 'package:material/widgets/textDemo.dart';
@@ -88,3 +90,10 @@ var listViewHandler = Handler(handlerFunc: (BuildContext context, Map<String, Li
   return ListViewDemo();
 });
 
+var mapHandle = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return MapDemo();
+});
+
+var listennerHandle = Handler(handlerFunc: (BuildContext context, Map<String, List<String>> params) {
+  return ListennerDemo();
+});

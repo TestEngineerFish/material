@@ -22,6 +22,8 @@ class BPRouter {
   static String raisedButtonDemo = "/raisedButtonDemo";
   static String rawMaterialButtonDemo = "/rawMaterialBUttonDemo";
   static String listViewDemo = "/listView";
+  static String mapDemo = "/map";
+  static String listennerDemo = "/listenner";
 
   static void configureRoutes(Router router) {
     router.define(home, handler: homeHandler);
@@ -41,6 +43,8 @@ class BPRouter {
     router.define(raisedButtonDemo, handler: raisedButtonHandler);
     router.define(rawMaterialButtonDemo, handler: rawMaterialButtonHandler);
     router.define(listViewDemo, handler: listViewHandler);
+    router.define(mapDemo, handler: mapHandle);
+    router.define(listennerDemo, handler: listennerHandle);
     //    List widgetDemoList = WidgetDemoList().getDemos();
   }
 }
