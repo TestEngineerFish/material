@@ -24,6 +24,7 @@ class BPRouter {
   static String listViewDemo = "/listView";
   static String mapDemo = "/map";
   static String listennerDemo = "/listenner";
+  static String unknowDemo = "/unknow";
 
   static void configureRoutes(Router router) {
     router.define(home, handler: homeHandler);
@@ -45,6 +46,7 @@ class BPRouter {
     router.define(listViewDemo, handler: listViewHandler);
     router.define(mapDemo, handler: mapHandle);
     router.define(listennerDemo, handler: listennerHandle);
+    router.define(unknowDemo, handler: unknowHandle);
     //    List widgetDemoList = WidgetDemoList().getDemos();
   }
 }
